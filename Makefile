@@ -1,5 +1,5 @@
 PKG_NAME := pypi-trove_classifiers
-URL = https://files.pythonhosted.org/packages/85/03/ce92467612ff8f4ad609d1cdc88a15d69bed23d354270f6ce4bbfcf62ec3/trove-classifiers-2023.4.18.tar.gz
+URL = https://files.pythonhosted.org/packages/f1/11/510639e751169550c933c98cba5947415301879e62fde97239d94cedad8c/trove-classifiers-2023.4.20.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
