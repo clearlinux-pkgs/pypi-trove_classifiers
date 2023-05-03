@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-trove_classifiers
-Version  : 2023.4.29
-Release  : 14
-URL      : https://files.pythonhosted.org/packages/c8/9b/8e1a88794d21abb90349c7d0decbee3efe31b4b74987c51d815fc5784c81/trove-classifiers-2023.4.29.tar.gz
-Source0  : https://files.pythonhosted.org/packages/c8/9b/8e1a88794d21abb90349c7d0decbee3efe31b4b74987c51d815fc5784c81/trove-classifiers-2023.4.29.tar.gz
+Version  : 2023.5.2
+Release  : 15
+URL      : https://files.pythonhosted.org/packages/33/75/4e87c5021949ece4171eddebb11ef30d7e787a99c4d24c7dc383dd306a6c/trove-classifiers-2023.5.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/33/75/4e87c5021949ece4171eddebb11ef30d7e787a99c4d24c7dc383dd306a6c/trove-classifiers-2023.5.2.tar.gz
 Summary  : Canonical source for classifiers on PyPI (pypi.org).
 Group    : Development/Tools
 License  : Apache-2.0
@@ -15,6 +15,8 @@ Requires: pypi-trove_classifiers-license = %{version}-%{release}
 Requires: pypi-trove_classifiers-python = %{version}-%{release}
 Requires: pypi-trove_classifiers-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+BuildRequires : pypi(calver)
+BuildRequires : pypi(setuptools)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -52,10 +54,10 @@ python3 components for the pypi-trove_classifiers package.
 
 
 %prep
-%setup -q -n trove-classifiers-2023.4.29
-cd %{_builddir}/trove-classifiers-2023.4.29
+%setup -q -n trove-classifiers-2023.5.2
+cd %{_builddir}/trove-classifiers-2023.5.2
 pushd ..
-cp -a trove-classifiers-2023.4.29 buildavx2
+cp -a trove-classifiers-2023.5.2 buildavx2
 popd
 
 %build
@@ -63,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682975366
+export SOURCE_DATE_EPOCH=1683146040
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
