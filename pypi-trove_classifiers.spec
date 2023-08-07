@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-trove_classifiers
-Version  : 2023.7.6
-Release  : 18
-URL      : https://files.pythonhosted.org/packages/8b/2b/46dde7e5df5f2b22e35d060d1e3ec2ec68c6c89f85e00273ea67585e4237/trove-classifiers-2023.7.6.tar.gz
-Source0  : https://files.pythonhosted.org/packages/8b/2b/46dde7e5df5f2b22e35d060d1e3ec2ec68c6c89f85e00273ea67585e4237/trove-classifiers-2023.7.6.tar.gz
+Version  : 2023.8.7
+Release  : 19
+URL      : https://files.pythonhosted.org/packages/a7/56/a8eb4a6df619f8301a10b71c50ad6e61f5c0b35cb8c57be42d5adb35530e/trove-classifiers-2023.8.7.tar.gz
+Source0  : https://files.pythonhosted.org/packages/a7/56/a8eb4a6df619f8301a10b71c50ad6e61f5c0b35cb8c57be42d5adb35530e/trove-classifiers-2023.8.7.tar.gz
 Summary  : Canonical source for classifiers on PyPI (pypi.org).
 Group    : Development/Tools
 License  : Apache-2.0
@@ -54,10 +54,10 @@ python3 components for the pypi-trove_classifiers package.
 
 
 %prep
-%setup -q -n trove-classifiers-2023.7.6
-cd %{_builddir}/trove-classifiers-2023.7.6
+%setup -q -n trove-classifiers-2023.8.7
+cd %{_builddir}/trove-classifiers-2023.8.7
 pushd ..
-cp -a trove-classifiers-2023.7.6 buildavx2
+cp -a trove-classifiers-2023.8.7 buildavx2
 popd
 
 %build
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1688662723
+export SOURCE_DATE_EPOCH=1691450381
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
