@@ -5,7 +5,7 @@
 #
 Name     : pypi-trove_classifiers
 Version  : 2023.9.19
-Release  : 21
+Release  : 22
 URL      : https://files.pythonhosted.org/packages/de/49/24c1cae3acdd6876c7770da36547b349b93908a34a67d68ef99eca0daf75/trove-classifiers-2023.9.19.tar.gz
 Source0  : https://files.pythonhosted.org/packages/de/49/24c1cae3acdd6876c7770da36547b349b93908a34a67d68ef99eca0daf75/trove-classifiers-2023.9.19.tar.gz
 Summary  : Canonical source for classifiers on PyPI (pypi.org).
