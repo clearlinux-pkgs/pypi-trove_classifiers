@@ -6,10 +6,10 @@
 # autospec commit: f4a13a5
 #
 Name     : pypi-trove_classifiers
-Version  : 2025.1.7.14
-Release  : 49
-URL      : https://files.pythonhosted.org/packages/fb/14/53bf5a0b2ae13a7d3c9405797d00e286aa3d08e5acb853b262a0097b0c17/trove_classifiers-2025.1.7.14.tar.gz
-Source0  : https://files.pythonhosted.org/packages/fb/14/53bf5a0b2ae13a7d3c9405797d00e286aa3d08e5acb853b262a0097b0c17/trove_classifiers-2025.1.7.14.tar.gz
+Version  : 2025.1.10.15
+Release  : 50
+URL      : https://files.pythonhosted.org/packages/db/1b/7bb619b31396d550022965673a0c284c914a0a4c68480f78097401e1b3e5/trove_classifiers-2025.1.10.15.tar.gz
+Source0  : https://files.pythonhosted.org/packages/db/1b/7bb619b31396d550022965673a0c284c914a0a4c68480f78097401e1b3e5/trove_classifiers-2025.1.10.15.tar.gz
 Summary  : Canonical source for classifiers on PyPI (pypi.org).
 Group    : Development/Tools
 License  : Apache-2.0
@@ -56,10 +56,10 @@ python3 components for the pypi-trove_classifiers package.
 
 
 %prep
-%setup -q -n trove_classifiers-2025.1.7.14
-cd %{_builddir}/trove_classifiers-2025.1.7.14
+%setup -q -n trove_classifiers-2025.1.10.15
+cd %{_builddir}/trove_classifiers-2025.1.10.15
 pushd ..
-cp -a trove_classifiers-2025.1.7.14 buildavx2
+cp -a trove_classifiers-2025.1.10.15 buildavx2
 popd
 
 %build
@@ -67,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1736272233
+export SOURCE_DATE_EPOCH=1736815461
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
