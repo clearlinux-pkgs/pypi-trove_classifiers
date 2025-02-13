@@ -7,7 +7,7 @@
 #
 Name     : pypi-trove_classifiers
 Version  : 2025.1.15.22
-Release  : 51
+Release  : 52
 URL      : https://files.pythonhosted.org/packages/f3/cb/8f6a91c74049180e395590901834d68bef5d6a2ce4c9ca9792cfadc1b9b4/trove_classifiers-2025.1.15.22.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f3/cb/8f6a91c74049180e395590901834d68bef5d6a2ce4c9ca9792cfadc1b9b4/trove_classifiers-2025.1.15.22.tar.gz
 Summary  : Canonical source for classifiers on PyPI (pypi.org).
